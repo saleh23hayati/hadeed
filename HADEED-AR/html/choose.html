@@ -1,0 +1,211 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>HADEED</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="../css/animate.css">
+	<link rel="stylesheet" type="text/css" href="../css/style.css">
+  <style>
+    .wow:first-child {
+      visibility: hidden;
+    }
+  </style>
+
+<link rel="shortcut icon" type="image/jpg" href="../images/gym-icon.jpg"/>               
+
+</head>
+<body>
+ 
+ <!-- Start Header  -->
+ <header>
+ 	 <div class="container">
+ 	 	<div class="logo">
+ 	 		 <a href="./index.html">HADEED <span>Club</span></a>
+ 	 	</div>
+ 	 	<a href="javascript:void(0)" class="ham-burger">
+ 	       <span></span>	
+ 	       <span></span>
+ 	 	</a>
+ 	 	<div class="nav">
+ 	 		<ul>
+ 	 			<li><a href="./index.html">Home</a></li>
+ 	 			<li><a href="./index.html">About</a></li>
+ 	 			<li><a href="./index.html">Advices</a></li>
+ 	 			<li><a href="./index.html">packages</a></li>
+ 	 			<li><a href="./index.html">Contact</a></li>
+ 	 		</ul>
+ 	 	</div>
+ 	 </div>
+ </header>
+ <!-- End Header  -->
+
+ <!-- Start Choose -->
+<section class="price-package" id="price">
+    <div class="container">
+          <h2>Choose Your Package</h2>
+          <p class="title-p">There are 3 options between cut, bulk and body recomposition choose your goal. </p>
+          <div class="content">
+                <div class="box wow bounceInUp">
+                      <div class="inner">
+                             <div class="price-tag">
+                                   BULK
+                             </div>
+                             <div class="img">
+                                  <img src="../images/price1.jpg" alt="price" />
+                             </div>
+                             <div class="text">
+                                   <h3>BUILDING HIGH MUSCLE-MASS </h3>
+                         <p>Mostly for skiny</p>		  
+                                  
+                                   <p>muscle gaining.	</p>
+
+                                   <p>improved resistance-training performance.	</p>
+
+                                   <p>potential for excess fat gain.</p>
+
+                                   <p>calorie surplus and weight gain.</p>
+                             
+                                   <a href="./bulk.html" class="btn">Choose</a>
+                             </div>
+                      </div>
+                </div>
+                <div class="box wow bounceInUp" data-wow-delay="0.2s">
+                      <div class="inner">
+                             <div class="price-tag">
+                                   CUT
+                             </div>
+                             <div class="img">
+                                  <img src="../images/price2.jpg" alt="price" />
+                             </div>
+                             <div class="text">
+                                   <h3>FOR LOOSING FAT</h3>
+                                   <p>calorie deficit and weight loss.
+                     </p>
+                                   <p>	muscle maintenance.</p>
+                                   <p>No Time Restrictions.</p>
+                                   <p>potential decrease in resistance-training performance.
+                     </p>
+                                   
+                                   <a href="../html/sign.html" class="btn">Choose</a>
+                             </div>
+                      </div>
+                </div>
+                <div class="box wow bounceInUp" data-wow-delay="0.4s">
+                      <div class="inner">
+                             <div class="price-tag">
+                                   BODY RECOMPOSITION
+                             </div>
+                             <div class="img">
+                                  <img src="../images/price3.jpg" alt="price" />
+                             </div>
+                             <div class="text">
+                                   <h3>FOR BODY RECOMPOSITION</h3>
+                         <P>Mostly for females</P>		  
+                                   <p>eat more staying on a slight caloric deficit.</p>
+                                   <p>increase your calorie maintenance level in the long run.</p>
+                                   <p>become stronger and obtain muscle definition.</p>
+                                  
+                                   <a href="../html/sign.html" class="btn">Choose</a>
+                             </div>
+                      </div>
+                </div>
+          </div>
+    </div>
+</section>
+<!-- End Choose -->
+ 
+ <!-- Start Contact -->
+ <section class="contact" id="contact">
+    <div class="container">
+       <div class="content">
+           <div class="box form wow slideInLeft">
+              <form>
+                 <input type="text" placeholder="Enter Name">
+                 <input type="text" placeholder="Enter Email">
+                 <input type="text" placeholder="Enter Mobile">
+                 <textarea placeholder="Enter Message"></textarea>
+                 <button type="submit">Send Message</button>
+              </form>
+           </div>
+           <div class="box text wow slideInRight">
+                <h2>Get Connected with us</h2>
+                 <p class="title-p">If you have any issues or enquiries please dont be affraid to coommunicate with us.</p>
+                 <div class="info">
+                     <ul>
+                         <li><span class="fa fa-map-marker"></span> Kuwait City, Sabah AL-Salem, O2 GYM </li>
+                         <li><span class="fa fa-phone"></span> 965 99999999</li>
+                         <li><span class="fa fa-envelope"></span> saleh@gym.com</li>
+                     </ul>
+                 </div>
+                 <div class="social">
+                      <a href=""><span class="fa fa-facebook"></span></a>
+                      <a href=""><span class="fa fa-linkedin"></span></a>
+                      <a href=""><span class="fa fa-skype"></span></a>
+                      <a href=""><span class="fa fa-youtube-play"></span></a>
+                 </div>
+
+                 <div class="copy">
+                     PowerBy &copy; SALEH
+                 </div>
+           </div>
+       </div>
+    </div>
+ </section>
+<!-- End Contact -->
+
+
+
+<!-- jquery -->
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+<script>
+   $(document).ready(function(){
+
+     $(".ham-burger, .nav ul li a").click(function(){
+      
+       $(".nav").toggleClass("open")
+
+       $(".ham-burger").toggleClass("active");
+     })      
+     $(".accordian-container").click(function(){
+         $(".accordian-container").children(".body").slideUp();
+         $(".accordian-container").removeClass("active")
+         $(".accordian-container").children(".head").children("span").removeClass("fa-angle-down").addClass("fa-angle-up")
+         $(this).children(".body").slideDown();
+         $(this).addClass("active")
+         $(this).children(".head").children("span").removeClass("fa-angle-up").addClass("fa-angle-down")
+     })
+
+      $(".nav ul li a, .go-down").click(function(event){
+        if(this.hash !== ""){
+
+             event.preventDefault();
+
+             var hash=this.hash; 
+
+             $('html,body').animate({
+               scrollTop:$(hash).offset().top
+             },800 , function(){
+                window.location.hash=hash;
+             });
+
+             // add active class in navigation
+             $(".nav ul li a").removeClass("active")
+             $(this).addClass("active")
+        }
+     })
+})
+
+</script>
+<script src="../script/script.js"></script>
+<script>
+   wow = new WOW(
+     {
+       animateClass: 'animated',
+       offset:       0,
+     }
+   );
+   wow.init();
+ </script>
+</body>
+</html>

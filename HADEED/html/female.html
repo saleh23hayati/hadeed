@@ -1,0 +1,368 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>HADEED</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="../css/animate.css">
+	<link rel="stylesheet" type="text/css" href="../css/female.css">
+  <style>
+    .wow:first-child {
+      visibility: hidden;
+    }
+  </style>
+
+<link rel="shortcut icon" type="image/jpg" href="../images/gym-icon.jpg"/>               
+
+</head>
+<body>
+ 
+ <!-- Start Header  -->
+ <header>
+ 	 <div class="container">
+ 	 	<div class="logo">
+ 	 		 <a href="./index.html">HADEED <span>Club</span></a>
+ 	 	</div>
+          <a id="userlink" href=""><button class="sign">bnt123</button></a>
+		  <a id="signoutlink" href="./index.html"><button class="signout">Sign Out</button></a>
+ 	 	<a href="javascript:void(0)" class="ham-burger">
+ 	       <span></span>	
+ 	       <span></span>
+ 	 	</a>
+ 	 	<div class="nav">
+ 	 		<ul>
+                <li><a href="./bulk.html">Training</a></li>
+                <li><a href="./index.html">Nutritions</a></li>
+                <li><a href="./index.html">Supplements Shop</a></li>
+                <li><a href="./index.html">Profile</a></li>
+                <li><a href="./index.html">Contact</a></li>
+ 	 		</ul>
+ 	 	</div>
+ 	 </div>
+ </header>
+ <!-- End Header  -->
+ <!-- Start Home -->
+ <section class="home wow flash" id="home">
+    <div class="container">
+          <h1 class="wow slideInLeft" data-wow-delay="1s">Welcome <span>bnt123</span>  </h1>
+    </div>
+
+</section>
+<!-- End Home -->
+
+<div id="containerLocal">
+    <table>
+      <caption>
+       <h3>PULL</h3>
+      </caption>
+      <thead>
+        <tr>
+          <td id="out"></td>
+          <th scope="col">Weight </th>
+          <th scope="col">Reps</th>
+          <th scope="col">Weight</th>
+          <th scope="col">Reps</th>
+          <th scope="col">Weight</th>
+          <th scope="col">Reps</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <th scope="row">Lat pulldown - cable</th>
+          <td><input id="datiTable1" type="text" placeholder="Insert.."></td>
+          <td><input id="datiTable2" type="text" placeholder="Insert.."></td>
+          <td><input id="datiTable3" type="text" placeholder="Insert.."></td>
+          <td><input id="datiTable4" type="text" placeholder="Insert.."></td>
+          <td><input id="datiTable5" type="text" placeholder="Insert.."></td>
+          <td><input id="datiTable6" type="text" placeholder="Insert.."></td>
+        </tr>
+        <tr>
+          <th scope="row">bent over raw - barbell</th>
+          <td><input id="datiTable7" type="text" placeholder="Insert.."></td>
+          <td><input id="datiTable8" type="text" placeholder="Insert.."></td>
+          <td><input id="datiTable9" type="text" placeholder="Insert.."></td>
+          <td><input id="datiTable10" type="text" placeholder="Insert.."></td>
+          <td><input id="datiTable11" type="text" placeholder="Insert.."></td>
+          <td><input id="datiTable12" type="text" placeholder="Insert.."></td>
+        </tr>
+        <tr>
+          <th scope="row">Seated row - cable</th>
+          <td><input id="datiTable13" type="text" placeholder="Insert.."></td>
+          <td><input id="datiTable14" type="text" placeholder="Insert.."></td>
+          <td><input id="datiTable15" type="text" placeholder="Insert.."></td>
+          <td><input id="datiTable16" type="text" placeholder="Insert.."></td>
+          <td><input id="datiTable17" type="text" placeholder="Insert.."></td>
+          <td><input id="datiTable18" type="text" placeholder="Insert.."></td>
+        </tr>
+        <tr>
+          <th scope="row">Lat pulldown - underhand</th>
+          <td><input id="datiTable19" type="text" placeholder="Insert.."></td>
+          <td><input id="datiTable20" type="text" placeholder="Insert.."></td>
+          <td><input id="datiTable21" type="text" placeholder="Insert.."></td>
+          <td><input id="datiTable22" type="text" placeholder="Insert.."></td>
+          <td><input id="datiTable23" type="text" placeholder="Insert.."></td>
+          <td><input id="datiTable24" type="text" placeholder="Insert.."></td>
+        </tr>
+        <tr>
+          <th scope="row">Hammer curl - cable</th>
+          <td><input id="datiTable25" type="text" placeholder="Insert.."></td>
+          <td><input id="datiTable26" type="text" placeholder="Insert.."></td>
+          <td><input id="datiTable27" type="text" placeholder="Insert.."></td>
+          <td><input id="datiTable28" type="text" placeholder="Insert.."></td>
+          <td><input id="datiTable29" type="text" placeholder="Insert.."></td>
+          <td><input id="datiTable30" type="text" placeholder="Insert.."></td>
+        </tr>
+      </tbody>
+    </table>
+    <div class="DataOptions">
+    <input id="datiTable1" type="button" value="Save"
+         onclick="SaveDataLocal ();" />
+    <input type="button" value="Restore"
+         onclick="RestoreDataLocal ();" />
+    <input type="button" value="Delete"
+         onclick="DeleteDataLocal ();" />
+         </div>
+    </div>
+
+    <div id="containerLocal">
+    <table>
+      <caption>
+       <h3>Push</h3>
+      </caption>
+      <thead>
+        <tr>
+          <td id="out"></td>
+          <th scope="col">Weight</th>
+          <th scope="col">Reps</th>
+          <th scope="col">Weight</th>
+          <th scope="col">Reps</th>
+          <th scope="col">Weight </th>
+          <th scope="col"> Reps</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <th scope="row">Bench press - barbell</th>
+          <td><input id="datiTable1" type="text" placeholder="Insert.."></td>
+          <td><input id="datiTable2" type="text" placeholder="Insert.."></td>
+          <td><input id="datiTable3" type="text" placeholder="Insert.."></td>
+          <td><input id="datiTable4" type="text" placeholder="Insert.."></td>
+          <td><input id="datiTable5" type="text" placeholder="Insert.."></td>
+          <td><input id="datiTable6" type="text" placeholder="Insert.."></td>
+        </tr>
+        <tr>
+          <th scope="row">Incline Bench press</th>
+          <td><input id="datiTable7" type="text" placeholder="Insert.."></td>
+          <td><input id="datiTable8" type="text" placeholder="Insert.."></td>
+          <td><input id="datiTable9" type="text" placeholder="Insert.."></td>
+          <td><input id="datiTable10" type="text" placeholder="Insert.."></td>
+          <td><input id="datiTable11" type="text" placeholder="Insert.."></td>
+          <td><input id="datiTable12" type="text" placeholder="Insert.."></td>
+        </tr>
+        <tr>
+          <th scope="row">Chest fly - machine</th>
+          <td><input id="datiTable13" type="text" placeholder="Insert.."></td>
+          <td><input id="datiTable14" type="text" placeholder="Insert.."></td>
+          <td><input id="datiTable15" type="text" placeholder="Insert.."></td>
+          <td><input id="datiTable16" type="text" placeholder="Insert.."></td>
+          <td><input id="datiTable17" type="text" placeholder="Insert.."></td>
+          <td><input id="datiTable18" type="text" placeholder="Insert.."></td>
+        </tr>
+        <tr>
+          <th scope="row">Triceps extension</th>
+          <td><input id="datiTable19" type="text" placeholder="Insert.."></td>
+          <td><input id="datiTable20" type="text" placeholder="Insert.."></td>
+          <td><input id="datiTable21" type="text" placeholder="Insert.."></td>
+          <td><input id="datiTable22" type="text" placeholder="Insert.."></td>
+          <td><input id="datiTable23" type="text" placeholder="Insert.."></td>
+          <td><input id="datiTable24" type="text" placeholder="Insert.."></td>
+        </tr>
+        <tr>
+          <th scope="row">Skullcrusher - Z bar</th>
+          <td><input id="datiTable25" type="text" placeholder="Insert.."></td>
+          <td><input id="datiTable26" type="text" placeholder="Insert.."></td>
+          <td><input id="datiTable27" type="text" placeholder="Insert.."></td>
+          <td><input id="datiTable28" type="text" placeholder="Insert.."></td>
+          <td><input id="datiTable29" type="text" placeholder="Insert.."></td>
+          <td><input id="datiTable30" type="text" placeholder="Insert.."></td>
+        </tr>
+      </tbody>
+    </table>
+    <div class="DataOptions">
+    <input id="datiTable1" type="button" value="Save"
+         onclick="SaveDataLocal ();" />
+    <input type="button" value="Restore"
+         onclick="RestoreDataLocal ();" />
+    <input type="button" value="Delete"
+         onclick="DeleteDataLocal ();" />
+         </div>
+    </div>
+
+    <div id="containerLocal">
+    <table>
+      <caption>
+       <h3>Legs & shoulders</h3>
+      </caption>
+      <thead>
+        <tr>
+          <td id="out"></td>
+          <th scope="col">weight</th>
+          <th scope="col">Reps</th>
+          <th scope="col">weight</th>
+          <th scope="col">Reps</th>
+          <th scope="col">weight </th>
+          <th scope="col"> Reps</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <th scope="row">Leg extension</th>
+          <td><input id="datiTable1" type="text" placeholder="Insert.."></td>
+          <td><input id="datiTable2" type="text" placeholder="Insert.."></td>
+          <td><input id="datiTable3" type="text" placeholder="Insert.."></td>
+          <td><input id="datiTable4" type="text" placeholder="Insert.."></td>
+          <td><input id="datiTable5" type="text" placeholder="Insert.."></td>
+          <td><input id="datiTable6" type="text" placeholder="Insert.."></td>
+        </tr>
+        <tr>
+          <th scope="row">Sqats</th>
+          <td><input id="datiTable7" type="text" placeholder="Insert.."></td>
+          <td><input id="datiTable8" type="text" placeholder="Insert.."></td>
+          <td><input id="datiTable9" type="text" placeholder="Insert.."></td>
+          <td><input id="datiTable10" type="text" placeholder="Insert.."></td>
+          <td><input id="datiTable11" type="text" placeholder="Insert.."></td>
+          <td><input id="datiTable12" type="text" placeholder="Insert.."></td>
+        </tr>
+        <tr>
+          <th scope="row">Calves</th>
+          <td><input id="datiTable13" type="text" placeholder="Insert.."></td>
+          <td><input id="datiTable14" type="text" placeholder="Insert.."></td>
+          <td><input id="datiTable15" type="text" placeholder="Insert.."></td>
+          <td><input id="datiTable16" type="text" placeholder="Insert.."></td>
+          <td><input id="datiTable17" type="text" placeholder="Insert.."></td>
+          <td><input id="datiTable18" type="text" placeholder="Insert.."></td>
+        </tr>
+        <tr>
+          <th scope="row">Overhead press</th>
+          <td><input id="datiTable19" type="text" placeholder="Insert.."></td>
+          <td><input id="datiTable20" type="text" placeholder="Insert.."></td>
+          <td><input id="datiTable21" type="text" placeholder="Insert.."></td>
+          <td><input id="datiTable22" type="text" placeholder="Insert.."></td>
+          <td><input id="datiTable23" type="text" placeholder="Insert.."></td>
+          <td><input id="datiTable24" type="text" placeholder="Insert.."></td>
+        </tr>
+        <tr>
+          <th scope="row">Face pull</th>
+          <td><input id="datiTable25" type="text" placeholder="Insert.."></td>
+          <td><input id="datiTable26" type="text" placeholder="Insert.."></td>
+          <td><input id="datiTable27" type="text" placeholder="Insert.."></td>
+          <td><input id="datiTable28" type="text" placeholder="Insert.."></td>
+          <td><input id="datiTable29" type="text" placeholder="Insert.."></td>
+          <td><input id="datiTable30" type="text" placeholder="Insert.."></td>
+        </tr>
+      </tbody>
+    </table>
+    <div class="DataOptions">
+    <input id="datiTable1" type="button" value="Save"
+         onclick="SaveDataLocal ();" />
+    <input type="button" value="Restore"
+         onclick="RestoreDataLocal ();" />
+    <input type="button" value="Delete"
+         onclick="DeleteDataLocal ();" />
+         </div>
+    </div>
+
+ <!-- Start Contact -->
+ <section class="contact" id="contact">
+    <div class="container">
+       <div class="content">
+           <div class="box form wow slideInLeft">
+              <form>
+                 <input type="text" placeholder="Enter Name">
+                 <input type="text" placeholder="Enter Email">
+                 <input type="text" placeholder="Enter Mobile">
+                 <textarea placeholder="Enter Message"></textarea>
+                 <button type="submit">Send Message</button>
+              </form>
+           </div>
+           <div class="box text wow slideInRight">
+                <h2>Get Connected with us</h2>
+                 <p class="title-p">If you have any issues or enquiries please dont be affraid to coommunicate with us.</p>
+                 <div class="info">
+                     <ul>
+                         <li><span class="fa fa-map-marker"></span> Kuwait City, Sabah AL-Salem, O2 GYM </li>
+                         <li><span class="fa fa-phone"></span> 965 99999999</li>
+                         <li><span class="fa fa-envelope"></span> saleh@gym.com</li>
+                     </ul>
+                 </div>
+                 <div class="social">
+                      <a href=""><span class="fa fa-facebook"></span></a>
+                      <a href=""><span class="fa fa-linkedin"></span></a>
+                      <a href=""><span class="fa fa-skype"></span></a>
+                      <a href=""><span class="fa fa-youtube-play"></span></a>
+                 </div>
+
+                 <div class="copy">
+                     PowerBy &copy; SALEH
+                 </div>
+           </div>
+       </div>
+    </div>
+ </section>
+<!-- End Contact -->
+
+
+
+<!-- jquery -->
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+<script>
+   $(document).ready(function(){
+
+     $(".ham-burger, .nav ul li a").click(function(){
+      
+       $(".nav").toggleClass("open")
+
+       $(".ham-burger").toggleClass("active");
+     })      
+     $(".accordian-container").click(function(){
+         $(".accordian-container").children(".body").slideUp();
+         $(".accordian-container").removeClass("active")
+         $(".accordian-container").children(".head").children("span").removeClass("fa-angle-down").addClass("fa-angle-up")
+         $(this).children(".body").slideDown();
+         $(this).addClass("active")
+         $(this).children(".head").children("span").removeClass("fa-angle-up").addClass("fa-angle-down")
+     })
+
+      $(".nav ul li a, .go-down").click(function(event){
+        if(this.hash !== ""){
+
+             event.preventDefault();
+
+             var hash=this.hash; 
+
+             $('html,body').animate({
+               scrollTop:$(hash).offset().top
+             },800 , function(){
+                window.location.hash=hash;
+             });
+
+             // add active class in navigation
+             $(".nav ul li a").removeClass("active")
+             $(this).addClass("active")
+        }
+     })
+})
+
+</script>
+<script src="../script/script.js"></script>
+<script>
+   wow = new WOW(
+     {
+       animateClass: 'animated',
+       offset:       0,
+     }
+   );
+   wow.init();
+ </script>
+</body>
+</html>
